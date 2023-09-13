@@ -11,7 +11,6 @@ import Combine
 class FeedViewModel: ObservableObject{
     @Published var arrFeedData = [Result]()
     var subscriber = Set<AnyCancellable>()
-    
     func getFeed(){
         let url = "https://rss.applemarketingtools.com/api/v2/us/apps/top-free/50/apps.json"
         let publisher:AnyPublisher<FeedData, Error> = HTTPClient.shared.getRecord(url: url)

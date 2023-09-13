@@ -11,9 +11,9 @@ struct FeedData:Decodable{
 }
 
 struct Feed:Decodable{
-    let results:[Result]
+    let results:[ResultData]
 }
-struct Result:Decodable{
+struct ResultData:Decodable{
     let artistName:String
     let name:String
     let id:String

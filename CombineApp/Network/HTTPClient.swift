@@ -37,4 +37,24 @@ final class HTTPClient{
             .decode(type: T.self, decoder: decoder)
             .eraseToAnyPublisher()
     }
+    
+    func getData<T:Decodable>(urlString:String)->Future<T, Error>{
+        guard let url = URL(string: urlString)
+        else{
+            return Future(){promise in
+                promise(Result.failure(ApiError.invalidUrl))
+            }
+        }
+        
+        return Future(){promise in
+            let data = URLSession
+                .shared
+                .dataTaskPublisher(for: url)
+                .map(\.data)
+                .decode(type: T.self, decoder: JSONDecoder())
+            promise(Result.success(data))
+        }
+        
+        
+    }
 }
