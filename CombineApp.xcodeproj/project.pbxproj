@@ -44,6 +44,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A84141E02AB3FE5600CC9611 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8568D2E2AA4EC1000996C16 /* ContentView.swift */,
+				A89807D52AADE440007955E7 /* FeedView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		A8568D202AA4EC1000996C16 = {
 			isa = PBXGroup;
 			children = (
@@ -63,14 +72,13 @@
 		A8568D2B2AA4EC1000996C16 /* CombineApp */ = {
 			isa = PBXGroup;
 			children = (
+				A84141E02AB3FE5600CC9611 /* View */,
 				A89807DA2AADE583007955E7 /* Model */,
 				A89807D72AADE4A8007955E7 /* ViewModel */,
 				A8568D3A2AA4EC2D00996C16 /* Network */,
 				A8568D2C2AA4EC1000996C16 /* CombineAppApp.swift */,
-				A8568D2E2AA4EC1000996C16 /* ContentView.swift */,
 				A8568D302AA4EC1000996C16 /* Assets.xcassets */,
 				A8568D322AA4EC1000996C16 /* Preview Content */,
-				A89807D52AADE440007955E7 /* FeedView.swift */,
 			);
 			path = CombineApp;
 			sourceTree = "<group>";

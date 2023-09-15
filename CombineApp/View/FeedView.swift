@@ -117,7 +117,7 @@ struct FeedView: View {
                 .background(Color(.systemGroupedBackground))
             }
             .onAppear{
-                feedViewModel.getFeed()
+                feedViewModel.getFeedData()
             }
             .navigationTitle("Feed")
         }
