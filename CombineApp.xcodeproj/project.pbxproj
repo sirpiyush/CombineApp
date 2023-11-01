@@ -76,6 +76,7 @@
 		A8568D2B2AA4EC1000996C16 /* CombineApp */ = {
 			isa = PBXGroup;
 			children = (
+				A8ED0B132AF225CC00C8A6B7 /* Udemy */,
 				A8F372F52AF0C75F00D51551 /* Timer */,
 				A84141E02AB3FE5600CC9611 /* View */,
 				A89807DA2AADE583007955E7 /* Model */,
@@ -120,6 +121,13 @@
 				A89807DE2AADE5BF007955E7 /* Population.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A8ED0B132AF225CC00C8A6B7 /* Udemy */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Udemy;
 			sourceTree = "<group>";
 		};
 		A8F372F52AF0C75F00D51551 /* Timer */ = {
