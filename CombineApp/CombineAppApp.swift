@@ -11,7 +11,10 @@ import SwiftUI
 struct CombineAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            //ContentView()
+            NavigationStack{
+                MovieView()
+            }
         }
     }
 }
