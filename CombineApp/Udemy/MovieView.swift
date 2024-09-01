@@ -42,21 +42,7 @@ struct MovieChildView:View{
     
     var body:some View{
         HStack(spacing:20){
-            AsyncImage(url: URL(string: movie.poster)) { image in
-                image
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width:70, height: 70)
-                    .background(
-                        Rectangle()
-                            .fill(.gray)
-                            .frame(width: 80, height: 80)
-                            .cornerRadius(10)
-                    )
-                    
-            } placeholder: {
-                ProgressView()
-            }
+            
 
             Text(movie.title)
         }
