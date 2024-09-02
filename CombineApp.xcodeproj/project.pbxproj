@@ -22,6 +22,8 @@
 		A8A6B5802AF4C35F00620EB3 /* MovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A6B57F2AF4C35F00620EB3 /* MovieView.swift */; };
 		A8A6B5832AF4C38E00620EB3 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A6B5822AF4C38E00620EB3 /* ApiService.swift */; };
 		A8A6B5852AF4C42C00620EB3 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A6B5842AF4C42C00620EB3 /* Movie.swift */; };
+		A8CB84C22C8551450004DAEA /* SubjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CB84C12C8551450004DAEA /* SubjectView.swift */; };
+		A8CB84C42C8551750004DAEA /* SubjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CB84C32C8551750004DAEA /* SubjectViewModel.swift */; };
 		A8E233E62AF698FF00EEC325 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E233E52AF698FF00EEC325 /* StringExtension.swift */; };
 		A8F372F72AF0C77F00D51551 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F372F62AF0C77F00D51551 /* TimerView.swift */; };
 		A8F372F92AF0C7B800D51551 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F372F82AF0C7B800D51551 /* TimerViewModel.swift */; };
@@ -44,6 +46,8 @@
 		A8A6B57F2AF4C35F00620EB3 /* MovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieView.swift; sourceTree = "<group>"; };
 		A8A6B5822AF4C38E00620EB3 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		A8A6B5842AF4C42C00620EB3 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		A8CB84C12C8551450004DAEA /* SubjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectView.swift; sourceTree = "<group>"; };
+		A8CB84C32C8551750004DAEA /* SubjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectViewModel.swift; sourceTree = "<group>"; };
 		A8E233E52AF698FF00EEC325 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		A8F372F62AF0C77F00D51551 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		A8F372F82AF0C7B800D51551 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
@@ -88,6 +92,7 @@
 		A8568D2B2AA4EC1000996C16 /* CombineApp */ = {
 			isa = PBXGroup;
 			children = (
+				A8CB84C02C8551260004DAEA /* Subject */,
 				A8E233E42AF698E100EEC325 /* Helper */,
 				A8A6B5812AF4C37700620EB3 /* Service */,
 				A8A6320B2AF4A202009F824E /* Config */,
@@ -153,6 +158,15 @@
 				A8A6B5822AF4C38E00620EB3 /* ApiService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		A8CB84C02C8551260004DAEA /* Subject */ = {
+			isa = PBXGroup;
+			children = (
+				A8CB84C12C8551450004DAEA /* SubjectView.swift */,
+				A8CB84C32C8551750004DAEA /* SubjectViewModel.swift */,
+			);
+			path = Subject;
 			sourceTree = "<group>";
 		};
 		A8E233E42AF698E100EEC325 /* Helper */ = {
@@ -253,6 +267,7 @@
 			files = (
 				A8A6B5852AF4C42C00620EB3 /* Movie.swift in Sources */,
 				A8F372F92AF0C7B800D51551 /* TimerViewModel.swift in Sources */,
+				A8CB84C22C8551450004DAEA /* SubjectView.swift in Sources */,
 				A8A6B5802AF4C35F00620EB3 /* MovieView.swift in Sources */,
 				A8A6B5832AF4C38E00620EB3 /* ApiService.swift in Sources */,
 				A8E233E62AF698FF00EEC325 /* StringExtension.swift in Sources */,
@@ -261,6 +276,7 @@
 				A89807D92AADE554007955E7 /* FeedViewModel.swift in Sources */,
 				A8568D2F2AA4EC1000996C16 /* ContentView.swift in Sources */,
 				A8A6320D2AF4A21E009F824E /* Api.swift in Sources */,
+				A8CB84C42C8551750004DAEA /* SubjectViewModel.swift in Sources */,
 				A89807DC2AADE59D007955E7 /* Feed.swift in Sources */,
 				A8568D2D2AA4EC1000996C16 /* CombineAppApp.swift in Sources */,
 				A897B0272AF5DF1E007821A9 /* MovieViewModel.swift in Sources */,
