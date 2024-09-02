@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A80F94D22C8591A200CCB998 /* CompactMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80F94D12C8591A200CCB998 /* CompactMap.swift */; };
 		A8568D2D2AA4EC1000996C16 /* CombineAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8568D2C2AA4EC1000996C16 /* CombineAppApp.swift */; };
 		A8568D2F2AA4EC1000996C16 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8568D2E2AA4EC1000996C16 /* ContentView.swift */; };
 		A8568D312AA4EC1000996C16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8568D302AA4EC1000996C16 /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A80F94D12C8591A200CCB998 /* CompactMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompactMap.swift; sourceTree = "<group>"; };
 		A8568D292AA4EC1000996C16 /* CombineApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombineApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8568D2C2AA4EC1000996C16 /* CombineAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineAppApp.swift; sourceTree = "<group>"; };
 		A8568D2E2AA4EC1000996C16 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A80F94D02C85917800CCB998 /* Operator */ = {
+			isa = PBXGroup;
+			children = (
+				A80F94D12C8591A200CCB998 /* CompactMap.swift */,
+			);
+			path = Operator;
+			sourceTree = "<group>";
+		};
 		A84141E02AB3FE5600CC9611 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +102,7 @@
 		A8568D2B2AA4EC1000996C16 /* CombineApp */ = {
 			isa = PBXGroup;
 			children = (
+				A80F94D02C85917800CCB998 /* Operator */,
 				A8CB84C02C8551260004DAEA /* Subject */,
 				A8E233E42AF698E100EEC325 /* Helper */,
 				A8A6B5812AF4C37700620EB3 /* Service */,
@@ -278,6 +289,7 @@
 				A8A6320D2AF4A21E009F824E /* Api.swift in Sources */,
 				A8CB84C42C8551750004DAEA /* SubjectViewModel.swift in Sources */,
 				A89807DC2AADE59D007955E7 /* Feed.swift in Sources */,
+				A80F94D22C8591A200CCB998 /* CompactMap.swift in Sources */,
 				A8568D2D2AA4EC1000996C16 /* CombineAppApp.swift in Sources */,
 				A897B0272AF5DF1E007821A9 /* MovieViewModel.swift in Sources */,
 				A8568D3E2AA4F1A900996C16 /* PopulationViewModel.swift in Sources */,
