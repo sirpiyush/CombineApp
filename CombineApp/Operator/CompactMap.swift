@@ -28,8 +28,9 @@ class CompactMapViewModel:ObservableObject{
         let range = 1...5
         var cancellable =
         range.publisher
-            .sink {[weak self] element in
-                self?.arr.append(dict[element] ?? "")
+            .map{dict[$0]}
+            .sink {[weak self] value in
+                self?.arr.append(value ?? "Hello")
             }
         
     }
