@@ -24,14 +24,17 @@ class CompactMapViewModel:ObservableObject{
     @Published var arr : [String] = []
     
     func loadData(){
-        let dict = [1:"One", 2:"Two", 3:"Three", 5:"Five"]
-        let range = 1...5
-        var cancellable =
+        let dict = [1:"One", 2:"Two", 3:"Three", 5:"Five", 8:"Eight", 10:"Ten", 11:"Eleven"]
+        let range = 1...15
+        let cancellable =
         range.publisher
-            .map{dict[$0]}
+            .compactMap{ (value)->String? in
+                dict[value]
+            }
             .sink {[weak self] value in
                 self?.arr.append(value ?? "Hello")
             }
+        cancellable.cancel()
         
     }
     
