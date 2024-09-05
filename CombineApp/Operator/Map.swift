@@ -31,9 +31,7 @@ struct Map: View {
         func loadData(){
             let request = URLRequest(url: URL(string: "https://ipapi.co/jsonsd/")!)
             URLSession.shared.dataTaskPublisher(for: request)
-                .map { (data, response) in
-                    data
-                }
+                .map (\.data)
                 .decode(type: IPData.self, decoder: JSONDecoder())
                 .sink { completion in
                     switch (completion){
