@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 struct CompactMapView:View {
+    //Added state object
     @StateObject var viewModel = CompactMapViewModel()
     var body: some View {
         List(viewModel.arr, id: \.self){ data in
